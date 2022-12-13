@@ -5,8 +5,13 @@ Vue.component('parties',{
     props: {
         cover: String,
         title: String,
-        genre: String,
-        profileParties: Array,
+        genre: String
+
+    },
+    data: function () {
+        return {
+            profileParties: Array
+        }
     },
     template: `
         <div class="w-1/3 lg:w-1/4 h-auto mx-2 flex flex-wrap justify-between shadow-xl cursor-pointer hover:shadow-2xl bg-gray-200 rounded-xl">
