@@ -957,7 +957,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@import url('http://fonts.cdnfonts.com/css/gilroy-bold?styles=20878,20879,20880');
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20878,20879,20880');
 
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
