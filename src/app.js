@@ -9,12 +9,12 @@ Vue.component('parties',{
         profileParties: Array,
     },
     template: `
-        <div class="w-1/3 lg:w-1/4 h-full mx-2 flex flex-wrap justify-between shadow-xl cursor-pointer hover:shadow-2xl bg-gray-200 rounded-xl">
-            <div class="w-full flex justify-between">
-                <div class="w-1/2 h-1/2 p-2">
-                    <img class="w-12 h-12 rounded-xl object-cover" :src="cover">
+        <div class="w-1/3 lg:w-1/4 h-auto mx-2 flex flex-wrap justify-between shadow-xl cursor-pointer hover:shadow-2xl bg-gray-200 rounded-xl">
+            <div class="w-full flex flex-col lg:flex-row justify-between">
+                <div class="w-full lg:w-1/2 h-1/2 p-2">
+                    <img class="w-full lg:w-12 h-12 rounded-xl object-cover" :src="cover">
                 </div>
-                <div class="w-1/2 h-1/2 flex justify-end p-2">
+                <div class="w-full lg:w-1/2 h-1/2 flex justify-center lg:justify-end p-2">
                     <img class="w-6 h-6 rounded-full" v-for="image in profileParties" :src="image.picture.thumbnail">
                 </div>
             </div>
@@ -46,7 +46,7 @@ Vue.component('watching',{
                     <h2 class="text-xs text-white">{{experience}}</h2>
                 </div>
             </div>
-            <div class="w-full h-2/5 flex justify-start items-center">
+            <div class="w-full h-2/5 flex justify-center lg:justify-start items-center">
                 <h2 class="text-sm px-3">{{title}}</h2>
             </div>
         </div>
